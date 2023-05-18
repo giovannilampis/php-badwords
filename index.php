@@ -21,6 +21,13 @@
 
         <form action="censorship.php" method="GET">
 
+            <div>
+
+                <label for="">Parola</label>
+                <input type="text" placeholder="Inserisci la parola da censurare">
+
+            </div>
+
         </form>
 
         <!-- BOOTSTRAP JAVASCRIPT CDN -->
