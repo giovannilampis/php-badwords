@@ -24,11 +24,11 @@
             <div>
 
                 <label for="">Parola</label>
-                <input type="text" placeholder="Inserisci la parola da censurare" name="word" required>
+                <input type="text" placeholder="Inserisci la parola da censurare" name="wordToBan" required>
 
-                <textarea type="text" name="text" class="text_to_censor" required></textarea>
+                <textarea type="text" name="textToCensor" class="text_to_censor" required></textarea>
 
-                <button type="submit">CENSURA 👮‍♂️</button>
+                <button type="submit">CENSURA TESTO 👮‍♂️</button>
 
             </div>
 
