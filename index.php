@@ -24,7 +24,9 @@
             <div>
 
                 <label for="">Parola</label>
-                <input type="text" placeholder="Inserisci la parola da censurare" name="parolazozza" required>
+                <input type="text" placeholder="Inserisci la parola da censurare" name="word" required>
+
+                <textarea type="text" name="text" class="text_to_censor" required></textarea>
 
                 <button type="submit">CENSURA 👮‍♂️</button>
 
