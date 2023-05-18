@@ -16,8 +16,12 @@
     <section id="php_badwords">
 
         <h1>
-            Find censored words
+            Find words to censor
         </h1>
+
+        <form action="censorship.php" method="GET">
+
+        </form>
 
         <!-- BOOTSTRAP JAVASCRIPT CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
