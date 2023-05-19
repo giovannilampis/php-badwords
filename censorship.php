@@ -29,6 +29,12 @@ $text = $_GET['textToCensor'];
         <?php echo $text ?>
     </p>
 
+    <h2>La versione edulcorata del testo inserito, privo della parola vietata 🤨 è:</h2>
+
+    <p>
+        <?php echo str_replace($word, '🤡🤡🤡', $text) ?>
+    </p>
+
 </body>
 
 </html>
