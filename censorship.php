@@ -4,6 +4,10 @@ $word = $_GET['wordToBan'];
 
 $text = $_GET['textToCensor'];
 
+$textWithoutSpaces = str_replace(' ', '', $text);
+
+$numberCharacters = strlen($textWithoutSpaces);
+
 ?>
 
 <!DOCTYPE html>
@@ -26,13 +30,15 @@ $text = $_GET['textToCensor'];
     </h1>
 
     <p>
-        <?php echo $text ?>
+        <?php echo $text ?>, il quale contiene un numero di caratteri pari a
+        <?php echo $numberCharacters ?>
     </p>
 
     <h2>La versione edulcorata del testo inserito, privo della parola vietata 🤨 è:</h2>
 
     <p>
-        <?php echo str_replace($word, '🤡🤡🤡', $text) ?>
+        <?php echo str_replace($word, '🤡🤡🤡', $text) ?>. Il testo censurato ha un alunghezza di
+        <?php ?>
     </p>
 
 </body>
