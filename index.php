@@ -19,14 +19,15 @@
             Find words to censor
         </h1>
 
-        <form action="censorship.php" method="GET">
+        <form action="censorship.php" method="POST">
 
             <div>
 
                 <label for="">Parola</label>
-                <input type="text" placeholder="Inserisci la parola da censurare" name="wordToBan" required>
 
                 <textarea type="text" name="textToCensor" class="text_to_censor" required></textarea>
+
+                <input type="text" placeholder="Inserisci la parola da censurare" name="wordToBan" required>
 
                 <button type="submit">CENSURA TESTO 👮‍♂️</button>
 
