@@ -8,6 +8,12 @@ $textWithoutSpaces = str_replace(' ', '', $text);
 
 $numberCharacters = strlen($textWithoutSpaces);
 
+$censoredText = str_replace($word, '🤡🤡🤡', $text);
+
+$censoredTextWithoutSpaces = str_replace(' ', '', $censoredText);
+
+$numberCharactersCensoredText = strlen($censoredTextWithoutSpaces);
+
 ?>
 
 <!DOCTYPE html>
@@ -29,17 +35,25 @@ $numberCharacters = strlen($textWithoutSpaces);
 
     </h1>
 
-    <p>
-        <?php echo $text ?>, il quale contiene un numero di caratteri pari a
+    <h2>
+        <?php echo $text ?>
+    </h2>
+
+    <h3>
+        Il testo inserito contiene un numero di caratteri pari a
         <?php echo $numberCharacters ?>
-    </p>
+    </h3>
 
-    <h2>La versione edulcorata del testo inserito, privo della parola vietata 🤨 è:</h2>
+    <h1>La versione edulcorata del testo inserito, privo della parola vietata 🤨 è:</h1>
 
-    <p>
-        <?php echo str_replace($word, '🤡🤡🤡', $text) ?>. Il testo censurato ha un alunghezza di
-        <?php ?>
-    </p>
+    <h2>
+        <?php echo $censoredText ?>.
+    </h2>
+
+    <h3>
+        Il testo censurato ha un numero di caratteri pari a
+        <?php echo $numberCharactersCensoredText ?>
+    </h3>
 
 </body>
 
