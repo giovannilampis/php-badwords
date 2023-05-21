@@ -25,12 +25,19 @@
 
                 <label for="">Testo</label>
 
-                <input type="text" placeholder="Inserisci il testo da sottoporre a censura" name="textToCensor"
-                    class="text_to_censor" required></input>
+                <div>
+                    <textarea type="text" placeholder="Inserisci il testo da sottoporre a censura" name="textToCensor"
+                        class="text_to_censor" required rows="12" cols="50"></textarea>
+                </div>
+
 
                 <label for="">Parola</label>
 
-                <input type="text" placeholder="Inserisci la parola da bannare" name="wordToBan" required>
+                <div>
+
+                    <input type="text" placeholder="Inserisci la parola da bannare" name="wordToBan" required>
+
+                </div>
 
                 <button type="submit">CENSURA TESTO 👮‍♂️</button>
 
