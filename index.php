@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <section id="php_badwords">
+    <section class="container text-center" id="php_badwords">
 
-        <h1>
+        <h1 class="py-3">
             Find words to censor
         </h1>
 
@@ -31,11 +31,12 @@
                 </div>
 
 
-                <label for="">Parola</label>
+                <label class="mt-4" for="">Parola</label>
 
                 <div>
 
-                    <input type="text" placeholder="Inserisci la parola da bannare" name="wordToBan" required>
+                    <input type="text" placeholder="Inserisci la parola da bannare" name="wordToBan" required
+                        class="mb-4">
 
                 </div>
 
